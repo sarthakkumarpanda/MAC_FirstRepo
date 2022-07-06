@@ -16,6 +16,7 @@ public static void main(String[] args) {
 		driver.get("https://rediff.com");
         driver.findElement(By.className("signin")).click();
         driver.findElement(By.id("login1")).sendKeys("seleniumpanda@rediffmail.com");
+        driver.findElement(By.id("password")).sendKeys("Selenium@123");
         driver.quit();
 	}
 
